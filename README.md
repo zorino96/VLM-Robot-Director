@@ -16,9 +16,15 @@ This architecture effectively bridges the gap between abstract language and conc
 
 ## Demonstration
 
-The video below shows the final result. The VLM is given a natural language command and an image of the scene. It correctly chooses the appropriate skill (`wave_hand` or `point_forward`) based on the command.
+The final experiment demonstrates the VLM successfully directing the robot to perform two different tasks based on natural language commands.
 
-https://github.com/zorino96/VLM-Robot-Director/assets/13600539/d2f6f4c8-3c3e-4f1e-8e5e-6e8d2e9c1b9f
+**Click the image below to watch the full video demonstration on Google Drive:**
+
+[![Robot Director Demonstration](https://drive.google.com/file/d/1kMxuQHScxOuj786LnRaiRNj-wUNOyoIw/view?usp=sharing)]
+
+(https://drive.google.com/file/d/1P5UezIHvvl2zxNY1kDf-CMzrnnP-Zger/view?usp=drive_link)
+
+*In the video, the VLM is tasked with: 1) "Wave at the red box," and 2) "Point towards the blue sphere." It correctly selects the appropriate skill for each command.*
 
 ## How to Run
 
