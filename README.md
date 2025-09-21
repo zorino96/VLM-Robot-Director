@@ -1,36 +1,36 @@
 # VLM as a Robot Director: A Hierarchical Framework for Robotic Control
 
-This project is a proof-of-concept demonstrating how a Vision-Language Model (VLM) can act as a high-level "director" for a robot, translating natural language commands into physical actions in a simulated environment.
+This repository contains the source code and results for our research on a hierarchical control system for robots. This project demonstrates how a Vision-Language Model (VLM) can act as a high-level "director" to translate natural language commands into physical actions in a simulated environment.
+
+The full research paper and dataset are permanently archived on Zenodo with the following DOI: **[DOI will be generated here after publishing on Zenodo]**
 
 ## Architecture
 
 The system uses a hierarchical, "Director-Actor" architecture:
 
-1.  **The Director (VLM - LLaVA 7B):** This is the high-level brain. It receives a natural language command (e.g., "Wave at the red box") and an image of the current scene. Its task is to understand the command, perceive the scene, and select the appropriate low-level skill to execute.
+1.  **The Director (VLM - LLaVA 7B):** The high-level brain that understands language and vision. It receives a user command (e.g., "Wave at the red box") and an image of the scene, and then selects the appropriate low-level skill.
 
-2.  **The Actor (Skill Library & Executor):** This is the low-level motor control system. It consists of:
-    *   A **Skill Library**: A pre-defined set of simple, reliable animations (e.g., `wave_hand`, `point_forward`).
-    *   A **Skill Executor**: A function that takes the name of a skill (chosen by the Director) and executes its corresponding animation in the PyBullet simulation.
+2.  **The Actor (Skill Library & Executor):** The low-level motor control system. It contains a pre-defined set of reliable animations (skills) and executes the one chosen by the Director in the PyBullet simulation.
 
-This approach effectively bridges the gap between abstract language and concrete physical action.
+This architecture effectively bridges the gap between abstract language and concrete physical action.
 
-## Results
+## Demonstration
 
-As demonstrated in the video below, the system can successfully:
--   Perceive a scene with multiple objects.
--   Understand distinct natural language commands.
--   Select the correct skill from the library to fulfill the command.
+The video below shows the final result. The VLM is given a natural language command and an image of the scene. It correctly chooses the appropriate skill (`wave_hand` or `point_forward`) based on the command.
 
-https://github.com/YOUR_USERNAME/VLM-Robot-Director/assets/YOUR_USER_ID/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-
+https://github.com/zorino96/VLM-Robot-Director/assets/13600539/d2f6f4c8-3c3e-4f1e-8e5e-6e8d2e9c1b9f
 
 ## How to Run
 
-1.  Open the `VLM_Robot_Director.ipynb` file in Google Colab.
+1.  Open the `VLM_Robot_Director.ipynb` notebook in Google Colab.
 2.  Ensure your Colab runtime is set to a **GPU** (e.g., T4 GPU).
-3.  Add your Hugging Face Access Token as a secret named `HF_TOKEN`.
-4.  Run all cells in the notebook.
+3.  Add your Hugging Face Access Token as a Colab secret with the name `HF_TOKEN`.
+4.  Run all cells in the notebook to reproduce the experiment.
+
+## Cite This Work
+
+If you use this code or research in your work, please cite it using the DOI provided at the top of this README.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
