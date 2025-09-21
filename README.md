@@ -20,7 +20,7 @@ The final experiment demonstrates the VLM successfully directing the robot to pe
 
 **Click the image below to watch the full video demonstration on Google Drive:**
 
-[![Robot Director Demonstration](https://drive.google.com/file/d/1kMxuQHScxOuj786LnRaiRNj-wUNOyoIw/view?usp=sharing)]
+[![Robot Director Demonstration] (https://drive.google.com/file/d/1kMxuQHScxOuj786LnRaiRNj-wUNOyoIw/view?usp=sharing)]
 
 (https://drive.google.com/file/d/1P5UezIHvvl2zxNY1kDf-CMzrnnP-Zger/view?usp=drive_link)
 
